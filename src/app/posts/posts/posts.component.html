@@ -1,0 +1,23 @@
+<div class="likes">
+  <button class="base_1" (click)="getPostLikes()">Show Likes</button>
+  
+  <div class="post-likes">
+      <div class="post-like" *ngFor="let like of postsLikes">
+          <h3>{{ post.likes }}</h3>
+      </div>
+  </div>
+</div>
+
+<div class="base-01-posts">
+  <h2 class="title" [title]="'Posts list'">Posts</h2>
+  <p *ngIf="posts.length === 0; else lessPosts">No record found</p>
+  <ng-template #lessPosts>
+    <app-post
+      *ngFor="let post of posts; odd as isOdd; even as isEven"
+      [ngClass]="{ 'post--odd': isOdd, 'post--even': isEven }"
+      [post]="post"
+      (postdelete)="handlePostDelete($event)"
+      (postlike)="handlePostLike($event)"
+    ></app-post>
+  </ng-template>
+</div>

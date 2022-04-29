@@ -1,0 +1,45 @@
+.fieldset {
+    background-color: wheat;
+    width: 100%;
+    margin-left: -15px;
+}
+
+* {
+    padding: 10px;
+}
+
+.user-add-form {
+    font-size: larger;
+    color: blue;
+    width: auto;
+}
+
+.input-group-align-center button {
+    color:black;
+    background-color:green;
+    position: absolute;
+    left: 48%;
+    top: 70%;
+
+}
+
+.input-group {
+    color: orangered;
+}
+
+.menubar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 2rem;
+}
+.menubar > li {
+    list-style-type: none;
+}
+.menubar > li > a {
+    display: inline-flex;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    color:blue;
+    text-decoration: solid;
+}

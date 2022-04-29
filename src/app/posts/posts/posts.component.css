@@ -1,0 +1,43 @@
+.base-01-posts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em 1em;
+    color:black;
+    background-color:white;
+    width:auto;
+    padding: 10px;
+    margin: 0px;
+    padding: 2em 1em 1em 1em;
+}
+.title {
+    grid-column: 1 /  -1;
+    text-align: center;
+    padding: 10px;
+}
+.post {
+    line-height: 1;
+    color:black;
+    padding: 1em 1em;
+}
+
+* {
+    background-color: aqua;
+}
+
+.likes {
+    padding: 30px;
+    background-color: blue;
+    text-align: center;
+}
+
+.base_1 {
+    padding: 1em;
+    background-color: antiquewhite;
+    font-size: medium;
+}
+
+.container-likes {
+    padding: 10px;
+}
+
+

@@ -1,0 +1,22 @@
+<div class="post">
+  <h4 class="post__title" [attr.aria-label]="post.title">
+    {{ post.title | titlecase }}
+  </h4>
+  <h3 class="post__likes">
+    Likes : {{ post.likes }}
+  </h3>
+  <h3 class="post__hits">
+    Hits : {{ post.hits }}
+  </h3>
+  <h3 class="post__content">
+    Content : {{ post.content }}
+  </h3>
+
+
+
+  <button class="btn btn-danger" (click)="handleDelete()">Delete</button>
+  <button class="btn-like" (click)="handleLike()">Like</button>
+</div>
+    
+
+  
